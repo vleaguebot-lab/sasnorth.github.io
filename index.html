@@ -1,58 +1,23 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="utf-8">
-    <title>Vleague</title>
-    <style>
-        body {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        
-    </style>
-</head>
-<body>
-
-
-    <script>
-        'use strict';
-        
-        const outputElement = document.getElementById('output_csv');
-
-        function getCsvData(dataPath) {
-            const request = new XMLHttpRequest();
-            request.addEventListener('load', (event) => {
-              const response = event.target.responseText;
-              convertArray(response);
-            });
-            request.open('GET', dataPath, true);
-            request.send();
-        }
-
-        function convertArray(data) {
-            const dataArray = [];
-            const dataString = data.split('n');
-            for (let i = 0; i < dataString.length; i++) {
-              dataArray[i] = dataString[i].split(',');
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vleague</title>
+        <!-- <link rel=""> -->
+        <style>
+            body {
+                display: flex;
+                flex-wrap: wrap;
             }
-            let insertElement = '';
-            dataArray.forEach((element) => {
-              insertElement += '<tr>';
-              element.forEach((childElement) => {
-              insertElement += `<td>${childElement}</td>`
-              });
-              insertElement += '</tr>';
-            });
-                outputElement.innerHTML = insertElement;
-        }
+            
+        </style>
+    </head>
+    <body>
+        <table id="csvRoot"></table>
 
-        getCsvData('./team-clutch.csv');
- 
-    </script>
-    <table>
-        <tbody id = 'output_csv'>
+        <script src="./lib/papaparse.min.js"></script>
+        <script src="./js/main.js"></script>
 
-        </tbody>
-    </table>
-</body>
+    </body>
 </html>
