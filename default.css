@@ -1,0 +1,15 @@
+/* th,
+td {
+  color: white;
+  background-color: #2196f3;
+}
+*/
+
+tr,
+td {
+  background-color: rgba(134, 255, 134, 0.2);
+}
+
+tr:hover {
+  background-color: yellow; /*背景色*/
+}
