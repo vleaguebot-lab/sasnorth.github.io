@@ -26,4 +26,4 @@ function csv_array(data) {
     });
     output_csv.innerHTML = insertElement; // 表示
 }
-csv_data('data/team-clutch.csv'); // csvのパス
+csv_data('data/v1_w/team-clutch.csv'); // csvのパス
