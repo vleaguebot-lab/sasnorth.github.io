@@ -1,4 +1,4 @@
-var division = 'v1_w'
+var division = 'v1_w';
 const output_csv = document.getElementById('color_list');
 
 function csv_data(dataPath) {
