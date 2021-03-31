@@ -1,7 +1,7 @@
-h1 {
+.title {
   color: white;
   background-color: black;
-  text-justify: center;
+  /* text-justify: center; */
 }
 
 h1 a[href] {
@@ -16,10 +16,13 @@ h2 {
 
 tr:first-of-type {
   background-color: rgba(128, 128, 128, 0.2);
+  top: 0;
+  left: 0;
 }
 
 tr + tr {
   background-color: rgba(134, 255, 134, 0.2);
+  position: sticky;
 }
 
 tr + tr:hover {
@@ -28,6 +31,8 @@ tr + tr:hover {
 
 td:first-of-type {
   background-color: rgba(255, 132, 132, 0.2);
-  width: 220px;
+  /* width: 220px; */
   box-sizing: border-box;
+  top: 0;
+  left: 0;
 }
