@@ -1,6 +1,6 @@
 var division = 'v1_w';
-// var csv_name = 'yearly_all.csv'
-var csv_name = 'all-clutch.csv'
+// var csv_name = 'yearly_all.csv';
+var csv_name = 'all-clutch.csv';
 const output_csv = document.getElementById('all-clutch');
 
 function csv_data(dataPath) {
