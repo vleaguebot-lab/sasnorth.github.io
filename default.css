@@ -1,7 +1,27 @@
-.title {
+/* body {
+  margin: 0;
+} */
+
+h1.title {
+  box-sizing: border-box;
   color: white;
   background-color: black;
+  /* display: block; */
+  /* width: auto; */
+  max-width: 2000px;
+  /* width: 400px; */
+  /* height: 50px; */
+  margin: 0px 5px 5px 0px;
+  text-align: center;
   /* text-justify: center; */
+}
+
+li {
+  color: green;
+}
+
+li a[href] {
+  color: green;
 }
 
 h1 a[href] {
@@ -26,7 +46,7 @@ tr + tr {
 }
 
 tr + tr:hover {
-  background-color: yellow; /*背景色*/
+  background-color: rgba(255, 255, 0, 0.5); /*背景色*/
 }
 
 td:first-of-type {
@@ -35,4 +55,57 @@ td:first-of-type {
   box-sizing: border-box;
   top: 0;
   left: 0;
+}
+
+nav ul {
+  display: table;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+nav li.division {
+  display: table-cell;
+  min-width: 50px;
+  width: 250px;
+  border-bottom: 3px solid green;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+}
+nav a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: #555;
+  padding-bottom: 5px;
+}
+/* nav li.current {
+  border-bottom: 3px solid #92d050;
+} */
+li:hover {
+  background-color: rgba(255, 255, 0, 0.5);
+  border-bottom: 3px solid rgba(255, 255, 0, 0.5);
+}
+
+li.division ul.second {
+  color: green;
+  list-style: none;
+  position: absolute;
+  width: 250px;
+  visibility: hidden;
+  margin: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+li a[href*="html"] {
+  border: 2px solid green;
+  background-color: rgb(212, 212, 212);
+  border-top: 0;
+  padding: 0;
+}
+
+li.division:hover ul.second {
+  visibility: visible;
+  opacity: 1;
 }

@@ -1,5 +1,4 @@
-var division = 'v1_w'
-const output_csv = document.getElementById('color_list');
+const output_csv = document.getElementById(`${csv_name}`);
 
 function csv_data(dataPath) {
     const request = new XMLHttpRequest(); // HTTPでファイルを読み込む
@@ -27,4 +26,5 @@ function csv_array(data) {
     });
     output_csv.innerHTML = insertElement; // 表示
 }
-csv_data(`data/${division}/team-clutch.csv`); // csvのパス
+csv_data(`${dir}data/${division}/${csv_name}.csv`); // csvのパス
+console.log(output_csv);

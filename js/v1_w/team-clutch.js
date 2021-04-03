@@ -1,7 +1,7 @@
-var division = 'v1_w';
+// var division = 'v1_w';
 // var csv_name = 'yearly_all.csv';
-var csv_name = 'team-clutch.csv';
-const output_csv = document.getElementById('team-clutch');
+// var csv_name = 'team-clutch.csv';
+let output_csv = document.getElementsByClassName('team-clutch');
 
 function csv_data(dataPath) {
     const request = new XMLHttpRequest(); // HTTPでファイルを読み込む
