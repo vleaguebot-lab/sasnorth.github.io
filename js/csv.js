@@ -21,13 +21,17 @@ function csv_array(data) {
     insertElement += '</tr>';
     for (let j = 0; j < dataString.length; j++) {
         insertElement += '<tr>';
-        dataArray[j].forEach((childElement) => {
-            if (j == 0) {
-                insertElement += `<th>${childElement}</th>`
+        for (let k = 0; k < dataArray[j].length; k++) {
+            if (j == 0 && k == 0) {
+                insertElement += `<th class="fixed01 columns">${dataArray[j][k]}</th>`;
+            } else if (j == 0) {
+                insertElement += `<th class="fixed02 columns">${dataArray[j][k]}</th>`;
+            } else if (k == 0) {
+                insertElement += `<th class="fixed02 name">${dataArray[j][k]}</th>`;
             } else {
-                insertElement += `<td>${childElement}</td>`;
+                insertElement += `<td>${dataArray[j][k]}</td>`;
             }
-        });
+        }
         insertElement += '</tr>';
     };
     // dataArray.forEach((element) => { //配列の中身を表示

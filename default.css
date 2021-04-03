@@ -39,12 +39,12 @@ table {
   overflow-y: scroll;
 }
 
-th {
-  background-color: rgba(150, 150, 150, 0.1);
+th.columns {
+  background-color: rgb(130, 200, 200);
   position: sticky;
   top: 0;
   left: 0;
-  /* z-index: ; */
+  z-index: 2;
 }
 
 td {
@@ -56,12 +56,16 @@ tr + tr:hover {
   background-color: rgba(255, 255, 0, 0.5); /*背景色*/
 }
 
-td:first-of-type {
-  background-color: rgba(255, 132, 132, 0.2);
-  /* width: 220px; */
-  box-sizing: border-box;
+th.name {
+  background-color: rgb(245, 187, 187);
+  position: sticky;
   top: 0;
   left: 0;
+  z-index: 1;
+}
+
+th.fixed01 {
+  z-index: 3;
 }
 
 nav ul {
