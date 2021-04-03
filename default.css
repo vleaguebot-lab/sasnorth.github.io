@@ -34,15 +34,22 @@ h2 {
   margin: 5px 5px 5px 5px;
 }
 
+table {
+  overflow-y: scroll;
+}
+
 tr:first-of-type {
   background-color: rgba(128, 128, 128, 0.2);
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
 tr + tr {
   background-color: rgba(134, 255, 134, 0.2);
-  position: sticky;
+  /* position: sticky; */
 }
 
 tr + tr:hover {
