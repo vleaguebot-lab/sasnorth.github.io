@@ -7,13 +7,13 @@ h1.title {
   color: white;
   background-color: black;
   /* display: block; */
-  /* width: auto; */
+  width: auto;
   max-width: 2000px;
   /* width: 400px; */
   /* height: 50px; */
   margin: 0px 5px 5px 0px;
   text-align: center;
-  /* text-justify: center; */
+  text-justify: center;
 }
 
 li {
@@ -87,7 +87,7 @@ nav a {
   display: block;
   width: 100%;
   text-decoration: none;
-  color: #555;
+  color: rgb(185, 185, 185);
   padding-bottom: 5px;
 }
 /* nav li.current {
@@ -106,7 +106,7 @@ li.division ul.second {
   visibility: hidden;
   margin: 0;
   opacity: 0;
-  z-index: 1;
+  z-index: 4;
 }
 
 li a[href*="html"] {
