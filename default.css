@@ -48,8 +48,12 @@ th.columns {
 }
 
 td {
-  background-color: rgba(134, 255, 134, 0.2);
+  background-color: rgba(255, 255, 255, 0.5);
   /* position: sticky; */
+}
+
+tr:nth-child(odd) td {
+  background-color: rgb(200, 200, 200, 0.5);
 }
 
 tr + tr:hover {
@@ -118,7 +122,7 @@ li a[href*="html"] {
 
 li a[href*="html"]:hover {
   background-color: rgba(255, 255, 0);
-  border-bottom: 5px solid green;
+  border-bottom: 3.5px solid green;
 }
 
 li.division:hover ul.second {
