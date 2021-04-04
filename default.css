@@ -48,12 +48,13 @@ th.columns {
 }
 
 td {
+  text-align: right;
   background-color: rgba(255, 255, 255, 0.5);
   /* position: sticky; */
 }
 
 tr:nth-child(odd) td {
-  background-color: rgb(200, 200, 200, 0.5);
+  background-color: rgb(220, 220, 220, 0.5);
 }
 
 tr + tr:hover {
@@ -97,7 +98,7 @@ nav a {
 /* nav li.current {
   border-bottom: 3px solid #92d050;
 } */
-li:hover {
+li.division:hover {
   background-color: rgba(255, 255, 0);
   /* border-bottom: 3px solid rgba(255, 255, 0); */
 }
