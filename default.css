@@ -111,7 +111,7 @@ li.division ul.second {
 
 li a[href*="html"] {
   border: 2px solid green;
-  background-color: rgb(212, 212, 212);
+  background-color: white;
   border-top: 0;
   padding: 0;
 }
